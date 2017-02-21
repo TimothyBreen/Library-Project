@@ -1,0 +1,6 @@
+SELECT Name, [Address], Title
+FROM tblBORROWER INNER JOIN tblBOOK_LOANS
+ON tblBOOK_LOANS.CardNo = tblBORROWER.CardNo
+INNER JOIN tblBOOK
+ON tblBOOK_LOANS.BookID = tblBOOK.BookID
+WHERE BranchID = '1' AND DueDate = '8/17/16'

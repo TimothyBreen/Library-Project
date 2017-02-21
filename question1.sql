@@ -1,0 +1,7 @@
+SELECT * FROM tblBOOK
+WHERE Title = 'The Lost Tribe'
+SELECT * 
+FROM tblBOOK_COPIES INNER JOIN tblLIBRARY_BRANCH
+ON tblBOOK_COPIES.BranchID = tblLIBRARY_BRANCH.BranchID
+WHERE BranchName = 'Sharpstown' AND BookID = '4'
+
